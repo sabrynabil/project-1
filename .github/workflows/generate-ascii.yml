@@ -9,8 +9,10 @@ jobs:
         steps:
         - name: checkout repo
           uses: actions/checkout@v5
+
         - name: check the repo files
           run: ls -ltra
+        
         - name: Execute the shell script
           run: |
              chmod +x generate-ascii.sh
